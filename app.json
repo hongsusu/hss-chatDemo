@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/chat1/chat1",
+    "pages/chat2/chat2",
+    "pages/wmap/wmap",
+    "pages/video/video"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "hssの天空之城",
+    "navigationBarTextStyle": "black"
+  }
+}

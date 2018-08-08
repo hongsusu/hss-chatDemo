@@ -1,0 +1,8 @@
+/* pages/wmap/wmap.wxss */
+.map{
+  height: 700rpx;
+  width: 100%;
+}
+.btn{
+  margin-top: 20rpx;
+}

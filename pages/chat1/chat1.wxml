@@ -1,0 +1,23 @@
+<!--pages/chat1/chat1.wxml-->
+ <swiper indicator-dots="{{true}}" autoplay="{{true}}" >
+    <block wx:for="{{imgUrls}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+</swiper>
+<view>
+<form bindsubmit="formSubmit" >
+   <div class="text-area"> 
+    <textarea placeholder="开始聊天吧" value="{{text_area}}"  bindblur="textareaVal" ></textarea>
+   </div> 
+  <button class="btn3" formType="submit">push!</button>
+  </form>
+</view>
+<view>
+  <block wx:for="{{text_array}}" wx:key="item">
+    <div class="card">
+      <text>{{item.full_name}}: {{item.message}}</text>
+    </div>
+  </block>
+</view>

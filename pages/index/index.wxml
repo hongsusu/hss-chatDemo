@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<!-- <open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data> -->
+<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">请先授权登录，否则后续功能可能受影响</button>
+<view wx:else>请升级微信版本</view>
+<view class="container">
+  <view class="userinfo">
+    <block >
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view>
+      <button bindtap="bindViewTap1" class="btn1">小猪佩奇</button>   
+    </view>
+    <view>
+        <button bindtap="bindViewTap2" class="btn2">小猪乔治</button>
+    </view>
+     <view>
+        <button bindtap="bindViewTap3" class="btn3">佩奇爸爸</button>
+    </view>
+     <view>
+        <button bindtap="bindViewTap4" class="btn4">佩奇妈妈</button>
+    </view>
+    </block>
+  </view>
+</view>

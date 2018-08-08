@@ -1,0 +1,12 @@
+<!--pages/chat2/chat2.wxml-->
+<!--index.wxml-->
+<view class="main">
+  <button bindtap='didPressChooesImage' class="btn4">上传图片</button>
+  <view class="image-container">
+    <image class="image" src="{{imageObject.imageURL}}" mode="aspectFit"></image>
+  </view>
+
+  <view class="data1">
+    imageURL: <text>{{imageObject.imageURL}}</text>
+  </view>
+</view>
